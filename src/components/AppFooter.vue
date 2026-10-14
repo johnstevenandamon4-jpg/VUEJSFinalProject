@@ -1,14 +1,13 @@
-<script setup>
-const year = new Date().getFullYear()
-const vueLink = 'https://vuejs.org'
-</script>
-
 <template>
   <footer class="foot">
-    Daily Spend Management {{ year }} · built with
-    <a :href="vueLink" target="_blank" rel="noopener">Vue 3</a>
+    <p>© {{ year }} Daily Spend Management</p>
+    <p class="foot-subtitle">Manage your money. Track your progress.</p>
   </footer>
 </template>
+
+<script setup>
+const year = new Date().getFullYear()
+</script>
 
 <style scoped>
 .foot {
@@ -17,5 +16,14 @@ const vueLink = 'https://vuejs.org'
   padding: 24px 12px 36px;
   font-size: 0.9rem;
 }
-.foot a { color: var(--brand); font-weight: 700; }
+
+.foot p {
+  margin: 0;
+}
+
+.foot-subtitle {
+  margin-top: 6px !important;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
 </style>

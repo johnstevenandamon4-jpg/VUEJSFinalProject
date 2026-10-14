@@ -11,7 +11,6 @@
         <RouterLink :to="{ name: 'Accounts' }">Accounts</RouterLink>
         <RouterLink :to="{ name: 'Transactions' }">Transactions</RouterLink>
         <RouterLink :to="{ name: 'Reports' }">Reports</RouterLink>
-        <RouterLink :to="{ name: 'Lab' }">Vue Lab</RouterLink>
       </nav>
     </div>
   </header>
